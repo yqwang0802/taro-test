@@ -1,0 +1,26 @@
+.index-wrap {
+    .index_bottom {
+        &--wrap {
+            bottom: 3.66933rem;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        &--btn {
+            width: 187px;
+            height: 48px;
+            line-height: 1.0;
+            font-size: 18px;
+            border-radius: 3px;
+            margin-bottom: 34px;
+        }
+        &--link {
+            color: #0a59e3;
+            cursor: pointer;
+        }
+    }
+    .at-button__text {
+        height: 46px;
+        line-height: 46px;
+    }
+}

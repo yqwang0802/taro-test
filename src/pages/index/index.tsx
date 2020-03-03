@@ -1,5 +1,6 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
+import { AtButton } from 'taro-ui'
 import './index.scss'
 
 export default class Index extends Component {
@@ -18,8 +19,13 @@ export default class Index extends Component {
 
   componentDidHide() { }
 
-  greeter(person: string) {
-    return "Hello, " + person;
+  goQuestion() {
+    Taro.navigateTo({
+      url: '/pages/question/question'
+    })
+  }
+  goAgree() {
+    console.log('risk')
   }
 
 
@@ -36,9 +42,13 @@ export default class Index extends Component {
 
   render() {
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className='index-wrap'>
+        <View className='index_bottom--wrap'>
+          <AtButton type='primary' className='index_bottom--btn' onClick={this.goQuestion}>开始答题</AtButton>
+          <Text>点击开始答题, 表示同意</Text><Text className='index_bottom--link'  onClick={this.goAgree}>免责声明</Text>
+        </View>
       </View>
+
     )
   }
 }

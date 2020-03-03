@@ -24,6 +24,8 @@ dist/
 .rn_temp/
 deploy_versions/
 
+lib/
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

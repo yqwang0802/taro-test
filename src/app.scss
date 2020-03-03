@@ -1,0 +1,11 @@
+$color-brand: #ee2f79;
+@import "~taro-ui/dist/style/index.scss";
+body,
+html {
+    line-height: 1.0;
+    font-size: 12px;
+}
+
+.taro-text {
+    font-size: 14px;
+}
